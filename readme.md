@@ -2,9 +2,9 @@
 **MineraftUWPCloner** *("MCUWPC")* is a  
 Minecraft UWP (*Windows 10/11* bedrock edition)  
 Cloner.  
-
+  
 ---
-
+  
 ## How 2 clone Minecraft UWP
 1. `git clone https://github.com/XiaozhiSans/MinecraftUWPCloner.git`  
    or download release pack from [here](https://www.github.com/XiaozhiSans/releases)  
@@ -14,14 +14,14 @@ Cloner.
 2. then open `MinecraftUWPCloner.bat`  
    ![MinecraftUWPCloner.bat](img/2.png)  
   
-2.5 press **yes**
-    ![uac](img/uac.png)
+2.5 press **yes**  
+    ![uac](img/uac.png)  
 
 3. and u will see this window  
    ![cmd window](img/3.png)  
    1. then input ur Minecraft appx **(afther extract)** path  
       for e.g. `d:\mcuwp`  
-      ***notice: do not add "\" at the end of path***  
+      ***notice: do not add "\\" at the end of path***  
       ![example path](img/3-path.png)  
    2. then we can see *menu*  
       ![menu](img/3-menu.png)  
