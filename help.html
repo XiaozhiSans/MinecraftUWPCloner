@@ -1,0 +1,35 @@
+<!doctype html><html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>MCUWPC Help Doc</title>
+		<style type="text/css">body{color: white; background-color: black;} a{color: yellow;}</style>
+	</head>
+	<body>
+		<h1>How to use MCUWPC</h1>
+		<ol>
+			<li><p>open MinecraftUWPCloner.bat we will see:</p><br><img src="img/1stLaunch.png"><br><p>e.g. <code>d:\mctest</code></p></li><br>
+			<li><p>then, we will see:</p><br><img src="img/mainFeatures.png"></li><br>
+			<li><p>then, we will enable UWP dev mode</p><p style="font-size: 6px;">if u enabled, just skip this step</p></li>
+			<li><p>then, we will modify AppxManifest.xml</li><br>
+				<img src="img/helpDoc/needModify-1.png">
+				<img src="img/helpDoc/needModify-2.png">
+				<br>we need to modfiy these things:
+				<ul>
+					<li><p><code>Identity Name</code><br>e.g. <code>XiaozhiSans.MinecraftCloneUWP</code></li>
+					<del><li><p><code>PhoneProductId</code><br>get new <em>uuid-v4</em> at <a href="https://uuid.online">here</a></p></li>
+					<li><p><code>PhonePublisherId</code><br><em>ditto</em></p></li>
+					<li><p><code>ProjectGUID</code><br>get new <em>guid</em> at <a href="https://guidgenerator.com">here</a></p></li>
+					<p>maybe no need to modify</p></del>
+				</ul>
+				<br><p>then press <code>Ctrl + S</code> to save changes</p>
+			<li><p>then, we will install Minecraft Clone</p><p>just wait for <code>Minecraft Clone install successful</code></p><br><img src="img/installMCC.png"></li>
+		</ol>
+		<h1>About Compatibility</h1>
+		<ul>
+			<li><p>idk why Minecraft Clone <strong>before 1.20.x will <em>crash</em></strong><br>i just tested 1.20.30,1.14.60 and 1.2.8, so all i know is before 1.20.30 will crash</p></li>
+			<li><p>my advice is use <strong>afther 1.20.x</strong> to clone</li>
+		</ul>
+		<footer style="font-size: 4px">Copyright (c) 2024 <a href="https://www.github.com/XiaozhiSans">XiaozhiSans</a></footer>
+	</body>
+</html>

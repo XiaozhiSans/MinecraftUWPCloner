@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5" xmlns:uap4="http://schemas.microsoft.com/appx/manifest/uap/windows10/4" IgnorableNamespaces="uap uap4 uap5 mp build" xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
+	<!-- This AppxManifest.xml is modified by XiaozhiSans for Minecraft UWP Cloner -->
+	<Identity Name="XiaozhiSans.MinecraftUWPC" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="1.XX.XXXX.0" ProcessorArchitecture="x64" />
+
+	<!-- Need modifiy -->
+	<mp:PhoneIdentity PhoneProductId="i need a new uuid-v4" PhonePublisherId="me 2" />
+
+	<Properties>
+		<DisplayName>Minecraft Clone</DisplayName>
+		<Description>Minecraft Clone</Description>
+		<PublisherDisplayName>Microsoft Studios</PublisherDisplayName>
+		<Logo>UAP.Assets\minecraft\icons\MCStoreLogo.png</Logo>
+	</Properties>
+	<Dependencies>
+		<TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.19041.0" MaxVersionTested="10.0.19041.0" />
+		<PackageDependency Name="Microsoft.Services.Store.Engagement" MinVersion="10.0.1610.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+		<PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.30704.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+	</Dependencies>
+	<Resources>
+		<Resource Language="BG-BG" />
+		<Resource Language="CS-CZ" />
+		<Resource Language="DA-DK" />
+		<Resource Language="DE-DE" />
+		<Resource Language="EL-GR" />
+		<Resource Language="EN-GB" />
+		<Resource Language="EN-US" />
+		<Resource Language="ES-ES" />
+		<Resource Language="ES-MX" />
+		<Resource Language="FI-FI" />
+		<Resource Language="FR-CA" />
+		<Resource Language="FR-FR" />
+		<Resource Language="HU-HU" />
+		<Resource Language="ID-ID" />
+		<Resource Language="IT-IT" />
+		<Resource Language="JA-JP" />
+		<Resource Language="KO-KR" />
+		<Resource Language="NB-NO" />
+		<Resource Language="NL-NL" />
+		<Resource Language="PL-PL" />
+		<Resource Language="PT-BR" />
+		<Resource Language="PT-PT" />
+		<Resource Language="RU-RU" />
+		<Resource Language="SK-SK" />
+		<Resource Language="SV-SE" />
+		<Resource Language="TR-TR" />
+		<Resource Language="UK-UA" />
+		<Resource Language="ZH-CN" />
+		<Resource Language="ZH-TW" />
+	</Resources>
+	<Applications>
+		<Application Id="App" Executable="Minecraft.Windows.exe" EntryPoint="Minecraft_Win10.App">
+			<uap:VisualElements DisplayName="Minecraft Clone" Square150x150Logo="UAP.Assets\minecraft\icons\MCLogo.png" Square44x44Logo="UAP.Assets\minecraft\icons\Logo.png" Description="Minecraft Clone" BackgroundColor="#000000">
+				<uap:DefaultTile Square310x310Logo="UAP.Assets\minecraft\icons\MCSquare310x310Logo.png" Wide310x150Logo="UAP.Assets\minecraft\icons\MCWide310x150Logo.png" Square71x71Logo="UAP.Assets\minecraft\icons\MCSquare71x71Logo.png" ShortName="Minecraft">
+					<uap5:MixedRealityModel Path="UAP.Win10.Assets\minecraft\icons\Minecraft_3D_Tile.GLB" />
+				</uap:DefaultTile>
+				<uap:SplashScreen Image="UAP.Assets\minecraft\icons\MCSplashScreen.png" BackgroundColor="#EF323D" />
+				<uap:InitialRotationPreference>
+					<uap:Rotation Preference="landscape" />
+					<uap:Rotation Preference="landscapeFlipped" />
+				</uap:InitialRotationPreference>
+			</uap:VisualElements>
+			<Extensions>
+				<uap4:Extension Category="windows.loopbackAccessRules">
+					<uap4:LoopbackAccessRules>
+						<uap4:Rule Direction="out" PackageFamilyName="Microsoft.MEECC_8wekyb3d8bbwe" />
+					</uap4:LoopbackAccessRules>
+				</uap4:Extension>
+				<uap:Extension Category="windows.fileTypeAssociation" EntryPoint="App2">
+					<uap:FileTypeAssociation Name="mcperf">
+						<uap:DisplayName>MCPERF</uap:DisplayName>
+						<uap:InfoTip>Launch Minecraft and import world</uap:InfoTip>
+						<uap:SupportedFileTypes>
+							<uap:FileType>.MCPERF</uap:FileType>
+						</uap:SupportedFileTypes>
+					</uap:FileTypeAssociation>
+				</uap:Extension>
+				<uap:Extension Category="windows.fileTypeAssociation" EntryPoint="App2">
+					<uap:FileTypeAssociation Name="mcshortcut">
+						<uap:DisplayName>MCSHORTCUT</uap:DisplayName>
+						<uap:InfoTip>Launch Minecraft and load world</uap:InfoTip>
+						<uap:SupportedFileTypes>
+							<uap:FileType>.MCSHORTCUT</uap:FileType>
+						</uap:SupportedFileTypes>
+					</uap:FileTypeAssociation>
+				</uap:Extension>
+				<uap:Extension Category="windows.fileTypeAssociation" EntryPoint="App2">
+					<uap:FileTypeAssociation Name="mcpack">
+						<uap:DisplayName>MCPACK</uap:DisplayName>
+						<uap:InfoTip>Launch Minecraft and import resource pack</uap:InfoTip>
+						<uap:SupportedFileTypes>
+							<uap:FileType>.MCPACK</uap:FileType>
+						</uap:SupportedFileTypes>
+					</uap:FileTypeAssociation>
+				</uap:Extension>
+				<uap:Extension Category="windows.fileTypeAssociation" EntryPoint="App2">
+					<uap:FileTypeAssociation Name="mcworld">
+						<uap:DisplayName>MCWORLD</uap:DisplayName>
+						<uap:InfoTip>Launch Minecraft and import world</uap:InfoTip>
+						<uap:SupportedFileTypes>
+							<uap:FileType>.MCWORLD</uap:FileType>
+						</uap:SupportedFileTypes>
+					</uap:FileTypeAssociation>
+				</uap:Extension>
+				<uap:Extension Category="windows.fileTypeAssociation" EntryPoint="App2">
+					<uap:FileTypeAssociation Name="mcproject">
+						<uap:DisplayName>MCPROJECT</uap:DisplayName>
+						<uap:InfoTip>Launch Minecraft and import project</uap:InfoTip>
+						<uap:SupportedFileTypes>
+							<uap:FileType>.MCPROJECT</uap:FileType>
+						</uap:SupportedFileTypes>
+					</uap:FileTypeAssociation>
+				</uap:Extension>
+				<uap:Extension Category="windows.fileTypeAssociation" EntryPoint="App2">
+					<uap:FileTypeAssociation Name="mceditoraddon">
+						<uap:DisplayName>MCEDITORADDON</uap:DisplayName>
+						<uap:InfoTip>Launch Minecraft and import editor addon</uap:InfoTip>
+						<uap:SupportedFileTypes>
+							<uap:FileType>.MCEDITORADDON</uap:FileType>
+						</uap:SupportedFileTypes>
+					</uap:FileTypeAssociation>
+				</uap:Extension>
+				<uap:Extension Category="windows.protocol">
+					<uap:Protocol Name="ms-xbl-multiplayer" />
+				</uap:Extension>
+				<uap:Extension Category="windows.protocol">
+					<uap:Protocol Name="minecraft" />
+				</uap:Extension>
+				<uap:Extension Category="windows.fileTypeAssociation" EntryPoint="App2">
+					<uap:FileTypeAssociation Name="mcaddon">
+						<uap:DisplayName>MCADDON</uap:DisplayName>
+						<uap:InfoTip>Launch Minecraft and import addon</uap:InfoTip>
+						<uap:SupportedFileTypes>
+							<uap:FileType>.MCADDON</uap:FileType>
+						</uap:SupportedFileTypes>
+					</uap:FileTypeAssociation>
+				</uap:Extension>
+				<uap:Extension Category="windows.fileTypeAssociation" EntryPoint="App2">
+					<uap:FileTypeAssociation Name="mctemplate">
+						<uap:DisplayName>MCTEMPLATE</uap:DisplayName>
+						<uap:InfoTip>Launch Minecraft and import world template</uap:InfoTip>
+						<uap:SupportedFileTypes>
+							<uap:FileType>.MCTEMPLATE</uap:FileType>
+						</uap:SupportedFileTypes>
+					</uap:FileTypeAssociation>
+				</uap:Extension>
+			</Extensions>
+		</Application>
+	</Applications>
+	<Capabilities>
+		<Capability Name="internetClientServer" />
+		<Capability Name="privateNetworkClientServer" />
+		<DeviceCapability Name="0b6cce76-2100-4c02-919e-01555ecba665" />
+	</Capabilities>
+	<build:Metadata>
+		<build:Item Name="cl.exe" Version="19.29.30151.0 built by: cloudtest" />
+		<build:Item Name="VisualStudio" Version="17.0" />
+		<build:Item Name="OperatingSystem" Version="10.0.20348.1 (WinBuild.160101.0800)" />
+		<build:Item Name="Microsoft.Build.AppxPackage.dll" Version="17.6.36415.52745" />
+
+		<!-- Need modifiy -->
+		<build:Item Name="ProjectGUID" Value="pls input new guid" />
+
+		<build:Item Name="OptimizingToolset" Value="None" />
+		<build:Item Name="TargetRuntime" Value="Native" />
+		<build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="10.0.19041.685" />
+		<build:Item Name="MakePri.exe" Version="10.0.19041.685 (WinBuild.160101.0800)" />
+	</build:Metadata>
+</Package>
